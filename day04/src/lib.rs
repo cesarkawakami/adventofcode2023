@@ -6,7 +6,7 @@ pub fn part1<R: std::io::Read>(reader: R) -> i64 {
     for line in reader.lines() {
         let line = line.unwrap();
         let (_, card_contents) = line.split_once(':').unwrap();
-        let (winning_numbers, your_hand) = card_contents.split_once("|").unwrap();
+        let (winning_numbers, your_hand) = card_contents.split_once('|').unwrap();
         let winning_numbers = winning_numbers
             .trim()
             .split_ascii_whitespace()
@@ -42,7 +42,7 @@ pub fn part2<R: std::io::Read>(reader: R) -> i64 {
         total_points += card_count;
         let line = line.unwrap();
         let (_, card_contents) = line.split_once(':').unwrap();
-        let (winning_numbers, your_hand) = card_contents.split_once("|").unwrap();
+        let (winning_numbers, your_hand) = card_contents.split_once('|').unwrap();
         let winning_numbers = winning_numbers
             .trim()
             .split_ascii_whitespace()
