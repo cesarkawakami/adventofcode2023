@@ -15,13 +15,16 @@ members = [
     "day10",
     "day11",
     "day12",
-    "day13", "day14",
+    "day13",
+    "day14",
+    "day15",
 ]
 
 [profile.dev]
 rustflags = ["-A", "dead_code"]
 
 [workspace.dependencies]
+anyhow = "1.0.77"
 ndarray = "0.15.6"
 num = "0.4.1"
 regex = "1.10.2"
