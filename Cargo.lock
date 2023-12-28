@@ -124,6 +124,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "day17"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "ndarray",
+ "smallvec",
+]
+
+[[package]]
 name = "libc"
 version = "0.2.151"
 source = "registry+https://github.com/rust-lang/crates.io-index"
