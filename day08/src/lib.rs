@@ -180,6 +180,7 @@ impl IndexesTrajectory {
         }
     }
 
+    #[allow(dead_code)]
     fn merge_slow(&self, other: &Self) -> Self {
         match self.head_size.cmp(&other.head_size) {
             std::cmp::Ordering::Less => {

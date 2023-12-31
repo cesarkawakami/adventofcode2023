@@ -282,6 +282,7 @@ pub fn part1<R: std::io::BufRead>(mut reader: R, count: usize) -> u64 {
     hi_cnt * lo_cnt
 }
 
+#[allow(dead_code)]
 fn part2_examine<R: std::io::BufRead>(mut reader: R) {
     // let tg_nodes = "tg,xn,cb,jb,kr,gq,rn,kc,nb,ks,ff,fd,mj,tx"
     //     .split(',')
@@ -388,7 +389,7 @@ broadcaster -> a
     }
 
     #[test]
-    fn part2_big () {
+    fn part2_big() {
         assert_eq!(3769u64 * 3767u64 * 4019u64 * 3881u64, 221453937522197);
     }
 }
