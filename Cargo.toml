@@ -22,7 +22,9 @@ members = [
     "day19",
     "day20",
     "day21",
-    "day22", "day23",
+    "day22",
+    "day23",
+    "day24",
 ]
 
 [workspace.dependencies]
@@ -32,3 +34,5 @@ smallvec = "1.11.2"
 stacker = "0.1.15"
 num = "0.4.1"
 regex = "1.10.2"
+approx = "0.5.1"
+z3 = "0.12.1"
